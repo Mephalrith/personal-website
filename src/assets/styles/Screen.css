@@ -1,0 +1,88 @@
+.header-app-bar {
+  display: inline-flex;
+  background-color: #1D1D1D;
+  width: 100vw;
+  height: 7vh;
+  min-height: 36px;
+  -webkit-box-shadow: 0 2px 10px #0E0E0E;
+  -moz-box-shadow: 0 2px 10px #0E0E0E;
+  box-shadow: 0 2px 10px #0E0E0E;
+  z-index: 1; }
+  .header-app-bar p {
+    font-family: Aadhunik, sans-serif;
+    font-size: calc(0.9em + 1vw);
+    align-self: center;
+    margin: 0 2vw 0 2vw; }
+
+.right-app-bar {
+  display: inline-flex;
+  align-self: center;
+  margin-left: auto; }
+  .right-app-bar a {
+    margin: 0 2vw 0 2vw; }
+  .right-app-bar img {
+    height: 2.5vw;
+    min-height: 20px; }
+
+.home-body {
+  font-family: Aadhunik, sans-serif;
+  margin: 7vh 0 0 7vw;
+  width: 100vw; }
+  .home-body p {
+    font-size: 4em; }
+  @media all and (orientation: landscape) {
+    .home-body p {
+      margin: 10px 0 20px 5px; } }
+
+.home-container img {
+  width: 60vw;
+  background: rgba(0, 0, 0, 0); }
+
+@media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait) {
+  .home-container img {
+    width: 80vw; } }
+
+@media all and (max-width: 599px) and (min-width: 320px) and (orientation: portrait) {
+  .home-container img {
+    width: 90vw; } }
+
+@media all and (orientation: landscape) {
+  .home-container img {
+    height: 60vh;
+    margin-top: 1vh; } }
+
+@font-face {
+  font-family: 'Aadhunik';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Aadhunik.ttf");
+  src: local("Aadhunik"), local("Aadhunik"), url("../fonts/Aadhunik.ttf?#iefix") format("embedded-opentype"), url("../fonts/Aadhunik.ttf") format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #1D1D1D;
+  color: white;
+  overflow: hidden; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px; }
+
+@media all and (min-width: 960px) and (orientation: portrait) {
+  body {
+    font-size: 20px; } }
+
+@media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait) {
+  body {
+    font-size: 16px; } }
+
+@media all and (max-width: 599px) and (min-width: 320px) and (orientation: portrait) {
+  body {
+    font-size: 10px; } }
+
+@media all and (max-width: 900px) and (orientation: landscape) {
+  body {
+    font-size: 8px; } }

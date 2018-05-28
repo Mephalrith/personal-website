@@ -1,0 +1,24 @@
+.home-body
+  font-family: Aadhunik, sans-serif
+  margin: 7vh 0 0 7vw
+  width: 100vw
+  p
+    font-size: 4em
+  @media all and (orientation: landscape)
+    p
+      margin: 10px 0 20px 5px
+
+.home-container
+  img
+    width: 60vw
+    background: rgba(0, 0, 0, 0)
+  @media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait)
+    img
+      width: 80vw
+  @media all and (max-width: 599px) and (min-width: 320px) and (orientation: portrait)
+    img
+      width: 90vw
+  @media all and (orientation: landscape)
+    img
+      height: 60vh
+      margin-top: 1vh
