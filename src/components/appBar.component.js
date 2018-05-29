@@ -1,23 +1,61 @@
 import React, {Component} from 'react';
+import {withRouter} from "react-router-dom";
+import {connect} from "react-redux";
+import {push} from 'react-router-redux';
+
 import github from '../assets/images/GitHub-Mark-Light-64px.png';
 import linkedin from '../assets/images/In-White-48px-R.png';
 
 class AppBar extends Component {
+
+    isSelected(name) {
+        if (name === this.props.local.pathname) {
+            return 'selected';
+        }
+        return '';
+    }
+
     render() {
         return (
             <div className={'header-app-bar'}>
-                <p>Home</p>
-                <p>About</p>
-                <p>Code</p>
-                <p>Design</p>
-                <p>Contact</p>
+                <a onClick={() => this.props.pushRoute('/')}
+                   className={this.isSelected('/')}>
+                    Home
+                </a>
+                <a onClick={() => this.props.pushRoute('/about')}
+                   className={this.isSelected('/about')}>
+                    About
+                </a>
+                <a onClick={() => this.props.pushRoute('/code')}
+                   className={this.isSelected('/code')}>
+                    Code
+                </a>
+                <a onClick={() => this.props.pushRoute('/design')}
+                   className={this.isSelected('/design')}>
+                    Design
+                </a>
+                <a onClick={() => this.props.pushRoute('/contact')}
+                   className={this.isSelected('/contact')}>
+                    Contact
+                </a>
+
                 <div className={'right-app-bar'}>
-                    <a href={"https://github.com/Mephalrith"}><img src={github}/></a>
-                    <a href={"https://www.linkedin.com/in/brooke-porter-00307152/"}><img src={linkedin}/></a>
+                    <a href={"https://github.com/Mephalrith"}>
+                        <img src={github} alt={"github"}/>
+                    </a>
+                    <a href={"https://www.linkedin.com/in/brooke-porter-00307152/"}>
+                        <img src={linkedin} alt={"linkedin"}/>
+                    </a>
                 </div>
             </div>
         )
     }
 }
 
-export default AppBar
+export default withRouter(connect((state) => ({
+        local: state.router.location
+    }),
+    (dispatch) => ({
+        pushRoute: (route) => dispatch(push(route)),
+    })
+)(AppBar))

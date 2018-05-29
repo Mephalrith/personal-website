@@ -8,7 +8,7 @@ export const history = createHistory();
 
 const middleware = applyMiddleware(
     routerMiddleware(history),
-    thunk
+    thunk,
 );
 
 const store = createStore(allReducers, middleware);
