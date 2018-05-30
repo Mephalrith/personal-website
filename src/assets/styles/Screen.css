@@ -3,39 +3,90 @@
   background-color: #1D1D1D;
   width: 100vw;
   height: 7vh;
-  min-height: 36px;
+  min-height: 38px;
+  max-height: 70px;
   -webkit-box-shadow: 0 2px 10px #0E0E0E;
   -moz-box-shadow: 0 2px 10px #0E0E0E;
   box-shadow: 0 2px 10px #0E0E0E;
-  z-index: 1; }
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 5; }
   .header-app-bar a {
     font-family: Aadhunik, sans-serif;
     font-size: calc(0.9em + 1vw);
+    cursor: pointer;
     align-self: center;
-    margin: 0 2vw 0 2vw; }
+    margin: 0 1vw 0 1vw;
+    padding-left: 6px;
+    padding-right: 8px; }
 
 .selected {
-  color: #D44A27; }
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  border-bottom: 20px solid #D44A27;
+  padding-top: calc(24px + 1vh);
+  padding-bottom: calc(5px + 1vh); }
 
 .right-app-bar {
   display: inline-flex;
   align-self: center;
   margin-left: auto; }
   .right-app-bar a {
-    margin: 0 2vw 0 2vw; }
+    margin: 0 1vw 0 1vw; }
   .right-app-bar img {
     height: 2.5vw;
     min-height: 20px; }
 
+@-webkit-keyframes fade-in {
+  0% {
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); }
+  100% {
+    border-bottom: 20px solid #D44A27;
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); } }
+
+@-moz-keyframes fade-in {
+  0% {
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); }
+  100% {
+    border-bottom: 20px solid #D44A27;
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); } }
+
+@-ms-keyframes fade-in {
+  0% {
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); }
+  100% {
+    border-bottom: 20px solid #D44A27;
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); } }
+
+@keyframes fade-in {
+  0% {
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); }
+  100% {
+    border-bottom: 20px solid #D44A27;
+    padding-top: calc(24px + 1vh);
+    padding-bottom: calc(5px + 1vh); } }
+
 .home-body {
   font-family: Aadhunik, sans-serif;
-  margin: 7vh 0 0 7vw;
-  width: 100vw; }
+  margin: 7vh 0 0 5vw;
+  max-width: 700px; }
   .home-body p {
     font-size: 4em; }
   @media all and (orientation: landscape) {
     .home-body p {
-      margin: 10px 0 20px 5px; } }
+      margin: 20px 0 20px 5px; } }
 
 .home-container img {
   width: 60vw;
@@ -54,6 +105,57 @@
     height: 60vh;
     margin-top: 1vh; } }
 
+.about-body {
+  font-family: Aadhunik, sans-serif;
+  margin-top: 20px; }
+
+.about-text-background {
+  display: block;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: -70px;
+  bottom: 100px;
+  max-width: 730px;
+  background: url("../images/aboutFooter.svg") no-repeat;
+  background-position-y: bottom;
+  z-index: 1; }
+  @media all and (max-width: 599px) and (orientation: portrait) {
+    .about-text-background {
+      top: -30px; } }
+  @media all and (max-width: 700px) and (orientation: landscape) {
+    .about-text-background {
+      top: -70px; } }
+
+.about-text {
+  display: block;
+  margin: 0 auto 0 auto;
+  font-size: 1.4em;
+  font-family: Ubuntu-L, sans-serif;
+  text-wrap: normal;
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 3; }
+  @media all and (max-width: 599px) and (orientation: portrait) {
+    .about-text {
+      margin: 0 5px 0 10px; } }
+  @media all and (max-width: 700px) and (orientation: landscape) {
+    .about-text {
+      position: relative;
+      top: -120px;
+      font-size: 2em;
+      margin: 0 10px 0 10px; } }
+
+.about-header {
+  display: block;
+  margin: 0 auto 0 auto;
+  max-width: 730px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2; }
+  @media all and (max-width: 700px) and (orientation: landscape) {
+    .about-header {
+      position: relative;
+      top: -130px; } }
+
 @font-face {
   font-family: 'Aadhunik';
   font-style: normal;
@@ -61,13 +163,19 @@
   src: url("../fonts/Aadhunik.ttf");
   src: local("Aadhunik"), local("Aadhunik"), url("../fonts/Aadhunik.ttf?#iefix") format("embedded-opentype"), url("../fonts/Aadhunik.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'Ubuntu-L';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Ubuntu-L.ttf");
+  src: local("Ubuntu-L"), local("Ubuntu-L"), url("../fonts/Ubuntu-L.ttf?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-L.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #1D1D1D;
-  color: white;
-  overflow: hidden; }
+  color: white; }
 
 body {
   padding: 0;
