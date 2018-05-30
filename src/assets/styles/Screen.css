@@ -90,7 +90,8 @@
 
 .home-container img {
   width: 60vw;
-  background: rgba(0, 0, 0, 0); }
+  background: rgba(0, 0, 0, 0);
+  z-index: 1; }
 
 @media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait) {
   .home-container img {
@@ -109,22 +110,20 @@
   font-family: Aadhunik, sans-serif;
   margin-top: 20px; }
 
-.about-text-background {
+.about-footer {
   display: block;
   margin: 0 auto 0 auto;
   position: relative;
-  top: -70px;
-  bottom: 100px;
+  top: -350px;
   max-width: 730px;
-  background: url("../images/aboutFooter.svg") no-repeat;
-  background-position-y: bottom;
-  z-index: 1; }
-  @media all and (max-width: 599px) and (orientation: portrait) {
-    .about-text-background {
-      top: -30px; } }
+  z-index: 1;
+  background: rgba(0, 0, 0, 0); }
+  @media all and (max-width: 600px) and (orientation: portrait) {
+    .about-footer {
+      top: -180px; } }
   @media all and (max-width: 700px) and (orientation: landscape) {
-    .about-text-background {
-      top: -70px; } }
+    .about-footer {
+      top: -500px; } }
 
 .about-text {
   display: block;
@@ -135,15 +134,18 @@
   max-width: 700px;
   background: rgba(0, 0, 0, 0);
   z-index: 3; }
-  @media all and (max-width: 599px) and (orientation: portrait) {
+  @media all and (max-width: 600px) and (orientation: portrait) {
     .about-text {
       margin: 0 5px 0 10px; } }
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-text {
       position: relative;
-      top: -120px;
+      top: -180px;
       font-size: 2em;
       margin: 0 10px 0 10px; } }
+  @media all and (min-width: 701px) and (max-width: 900px) and (orientation: landscape) {
+    .about-text {
+      font-size: 2em; } }
 
 .about-header {
   display: block;
@@ -154,7 +156,7 @@
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-header {
       position: relative;
-      top: -130px; } }
+      top: -120px; } }
 
 @font-face {
   font-family: 'Aadhunik';
