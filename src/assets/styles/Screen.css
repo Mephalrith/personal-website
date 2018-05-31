@@ -1,6 +1,7 @@
 .header-app-bar {
   display: inline-flex;
   background-color: #1D1D1D;
+  color: white;
   width: 100vw;
   height: 7vh;
   min-height: 38px;
@@ -81,7 +82,8 @@
 .home-body {
   font-family: Aadhunik, sans-serif;
   margin: 7vh 0 0 5vw;
-  max-width: 700px; }
+  max-width: 700px;
+  height: 83vh; }
   .home-body p {
     font-size: 4em; }
   @media all and (orientation: landscape) {
@@ -90,7 +92,6 @@
 
 .home-container img {
   width: 60vw;
-  background: rgba(0, 0, 0, 0);
   z-index: 1; }
 
 @media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait) {
@@ -116,8 +117,7 @@
   position: relative;
   top: -350px;
   max-width: 730px;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0); }
+  z-index: 1; }
   @media all and (max-width: 600px) and (orientation: portrait) {
     .about-footer {
       top: -180px; } }
@@ -132,7 +132,6 @@
   font-family: Ubuntu-L, sans-serif;
   text-wrap: normal;
   max-width: 700px;
-  background: rgba(0, 0, 0, 0);
   z-index: 3; }
   @media all and (max-width: 600px) and (orientation: portrait) {
     .about-text {
@@ -151,12 +150,116 @@
   display: block;
   margin: 0 auto 0 auto;
   max-width: 730px;
-  background: rgba(0, 0, 0, 0);
   z-index: 2; }
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-header {
       position: relative;
       top: -120px; } }
+
+.design-body {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 90vw; }
+  .design-body p {
+    font-family: Aadhunik, sans-serif;
+    font-size: 2em;
+    margin-bottom: 0; }
+
+.design-list {
+  display: grid; }
+
+.design-list-top {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  border: 2px solid #D44A27;
+  border-left-width: 0;
+  justify-content: space-around; }
+
+.design-list-mid {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 2px solid #D44A27;
+  border-right-width: 0;
+  border-top-width: 0;
+  justify-content: space-around; }
+
+.design-list-bottom {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  border: 2px solid #D44A27;
+  border-left-width: 0;
+  border-top-width: 0;
+  justify-content: space-around; }
+
+.long-image {
+  margin: 20px auto 20px auto;
+  height: 25vh;
+  width: 40%;
+  background-color: var(--design-icon-background);
+  display: flex; }
+  .long-image img {
+    display: block;
+    width: 90%;
+    max-height: 90%;
+    margin: auto; }
+  @media all and (orientation: portrait) {
+    .long-image {
+      height: 18vh;
+      width: 45%; } }
+
+.short-image {
+  margin: 20px auto 20px auto;
+  height: 25vh;
+  width: 25%;
+  background-color: var(--design-icon-background);
+  display: flex; }
+  .short-image img {
+    display: block;
+    max-width: 95%;
+    height: 95%;
+    margin: auto; }
+  @media all and (orientation: portrait) {
+    .short-image {
+      height: 18vh; } }
+
+.concept-tall {
+  margin: 20px auto 20px auto;
+  height: 40vh;
+  width: 25%;
+  background-color: var(--design-icon-background);
+  display: flex; }
+  .concept-tall img {
+    display: block;
+    max-width: 95%;
+    height: 95%;
+    margin: auto; }
+  @media all and (orientation: portrait) {
+    .concept-tall {
+      height: 30vh;
+      width: 40%; } }
+
+.concept-long {
+  margin: 20px auto 20px auto;
+  height: 40vh;
+  width: 45%;
+  background-color: var(--design-icon-background);
+  display: flex; }
+  .concept-long img {
+    display: block;
+    width: 95%;
+    max-height: 95%;
+    margin: auto; }
+  @media all and (orientation: portrait) {
+    .concept-long {
+      height: 30vh;
+      width: 50%; } }
 
 @font-face {
   font-family: 'Aadhunik';
@@ -175,14 +278,40 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #1D1D1D;
-  color: white; }
+  box-sizing: border-box; }
 
 body {
   padding: 0;
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: Aadhunik, sans-serif;
+  --background-color: #1D1D1D;
+  --design-icon-background: rgba(255, 255, 255, 0.1);
+  background-color: var(--background-color);
+  color: white; }
+
+.theme-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  background-color: var(--background-color);
+  z-index: 5; }
+
+.theme {
+  width: 140px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .theme p {
+    font-size: 16px;
+    margin: 0 10px 0 10px; }
+  .theme img {
+    height: 90%;
+    margin: 0; }
 
 @media all and (min-width: 960px) and (orientation: portrait) {
   body {

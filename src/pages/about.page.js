@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 import AppBar from "../components/appBar.component";
+import ThemeBar from '../components/themeBar.component';
 import aboutHeader from '../assets/images/aboutHeader.svg';
+import darkAboutHeader from '../assets/images/Dark-aboutHeader.svg';
 import aboutFooter from '../assets/images/aboutFooter.svg';
+import darkAboutFooter from '../assets/images/Dark-aboutFooter.svg';
+import {connect} from "react-redux";
+import {withRouter} from "react-router-dom";
 
 class AboutPage extends Component {
     render() {
@@ -11,9 +16,15 @@ class AboutPage extends Component {
                 <AppBar/>
 
                 <div className={'about-body'}>
-                    <img src={aboutHeader}
-                         alt={"My name is Brooke Porter"}
-                         className={'about-header'}/>
+                    {
+                        this.props.theme === "Dark" ?
+                            <img src={aboutHeader}
+                                 alt={"My name is Brooke Porter"}
+                                 className={'about-header'}/> :
+                            <img src={darkAboutHeader}
+                                 alt={"My name is Brooke Porter"}
+                                 className={'about-header'}/>
+                    }
                     <p className={'about-text'}>
                         I do some stuff. I'll tell you all about my life right here. I guess.<br/><br/>
                         After a short commercial break...<br/><br/>
@@ -43,13 +54,27 @@ class AboutPage extends Component {
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         <br/><br/>
                     </p>
-                    <img src={aboutFooter}
-                         alt={"Fox tail"}
-                         className={'about-footer'}/>
+                    {
+                        this.props.theme === "Dark" ?
+                            <img src={aboutFooter}
+                                 alt={"Fox tail"}
+                                 className={'about-footer'}/> :
+                            <img src={darkAboutFooter}
+                                 alt={"Fox tail"}
+                                 className={'about-footer'}/>
+                    }
+
                 </div>
+
+                <ThemeBar/>
+
             </div>
         );
     }
 }
 
-export default AboutPage;
+export default withRouter(connect((state) => ({
+        theme: state.style.theme
+    }),
+    (dispatch) => ({})
+)(AboutPage))

@@ -3,8 +3,8 @@ import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {push} from 'react-router-redux';
 
-import github from '../assets/images/GitHub-Mark-Light-64px.png';
-import linkedin from '../assets/images/In-White-48px-R.png';
+import github from '../assets/images/GitHub.png';
+import linkedin from '../assets/images/LinkedIn.png';
 
 class AppBar extends Component {
 
@@ -38,7 +38,6 @@ class AppBar extends Component {
                    className={this.isSelected('/contact')}>
                     Contact
                 </a>
-
                 <div className={'right-app-bar'}>
                     <a href={"https://github.com/Mephalrith"}>
                         <img src={github} alt={"github"}/>
@@ -53,7 +52,8 @@ class AppBar extends Component {
 }
 
 export default withRouter(connect((state) => ({
-        local: state.router.location
+        local: state.router.location,
+        theme: state.style.theme
     }),
     (dispatch) => ({
         pushRoute: (route) => dispatch(push(route)),
