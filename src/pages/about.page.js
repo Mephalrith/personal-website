@@ -75,6 +75,5 @@ class AboutPage extends Component {
 
 export default withRouter(connect((state) => ({
         theme: state.style.theme
-    }),
-    (dispatch) => ({})
+    })
 )(AboutPage))

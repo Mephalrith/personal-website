@@ -1,3 +1,4 @@
+@import url(variables.css);
 .header-app-bar {
   display: inline-flex;
   background-color: #1D1D1D;
@@ -79,19 +80,44 @@
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); } }
 
+.theme-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  background-color: var(--background-color);
+  z-index: 5; }
+
+.theme {
+  width: 140px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .theme p {
+    font-size: 16px;
+    margin: 0 10px 0 10px; }
+
 .home-body {
+  display: block;
   font-family: Aadhunik, sans-serif;
-  margin: 7vh 0 0 5vw;
-  max-width: 700px;
-  height: 83vh; }
+  margin: 7vh auto 0 auto;
+  max-width: 730px;
+  height: 83vh;
+  text-align: center; }
   .home-body p {
     font-size: 4em; }
   @media all and (orientation: landscape) {
     .home-body p {
       margin: 20px 0 20px 5px; } }
+  @media all and (max-width: 730px) and (orientation: portrait) {
+    .home-body {
+      margin: 7vh 1vw 0 2vw; } }
 
 .home-container img {
-  width: 60vw;
+  width: 100%;
   z-index: 1; }
 
 @media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait) {
@@ -261,6 +287,18 @@
       height: 30vh;
       width: 50%; } }
 
+.contact-body {
+  display: block;
+  margin: 7vh auto 0 auto;
+  max-width: 730px;
+  text-align: center; }
+  .contact-body h1 {
+    font-size: 4em; }
+  .contact-body p {
+    margin: 0 2vw 0 2vw;
+    font-family: Ubuntu-L, sans-serif;
+    font-size: 2em; }
+
 @font-face {
   font-family: 'Aadhunik';
   font-style: normal;
@@ -285,33 +323,8 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: Aadhunik, sans-serif;
-  --background-color: #1D1D1D;
-  --design-icon-background: rgba(255, 255, 255, 0.1);
   background-color: var(--background-color);
   color: white; }
-
-.theme-bar {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 140px;
-  background-color: var(--background-color);
-  z-index: 5; }
-
-.theme {
-  width: 140px;
-  height: 30px;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  margin: 0 0 0 auto;
-  background-color: rgba(0, 0, 0, 0.3); }
-  .theme p {
-    font-size: 16px;
-    margin: 0 10px 0 10px; }
-  .theme img {
-    height: 90%;
-    margin: 0; }
 
 @media all and (min-width: 960px) and (orientation: portrait) {
   body {

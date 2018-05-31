@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AppBar from "../components/appBar.component";
+import ThemeBar from '../components/themeBar.component';
 
 class ContactPage extends Component {
     render() {
@@ -8,9 +9,13 @@ class ContactPage extends Component {
 
                 <AppBar/>
 
-                <div>
-                    <p>Contact Page</p>
+                <div className={'contact-body'}>
+                    <h1>Contact Me</h1>
+                    <p>I'd love to hear from you! I'm happy to chat in any of the below fashions:</p>
                 </div>
+
+                <ThemeBar/>
+
             </div>
         );
     }
