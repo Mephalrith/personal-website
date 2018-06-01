@@ -1,38 +1,66 @@
 .contact-body
   display: block
-  margin: 7vh auto 0 auto
-  max-width: 730px
+  margin: 6vh auto 0 auto
+  max-width: 70vw
   text-align: center
   h1
     font-family: var(--primary-font)
     font-size: 4em
+    margin: 0 2vw 2vh 2vw
   p
-    margin: 0 2vw 0 2vw
+    margin: 2vh 2vw 1vh 2vw
     font-family: var(--secondary-font)
-    font-size: 2em
+    font-size: 1.5em
+  @media all and (orientation: landscape)
+    height: 100vh
+  @media all and (orientation: portrait)
+    max-width: 90vw
 
-.contact-methods
+.contact-methods-top
   display: inline-flex
-  margin: 4vh
-  border: 4px solid var(--accent)
+  margin-top: 4vh
+  border: 2px solid var(--accent)
   border-right-width: 0
   border-bottom-width: 0
+  width: 100%
+
+.contact-methods-bottom
+  display: inline-flex
+  border: 2px solid var(--accent)
+  border-left-width: 0
+  width: 100%
 
 .contact-card
-  width: 200px
-  height: 150px
-  margin: 2vh 2vw 0 2vw
+  width: 40vw
+  height: 20vh
+  margin: 5vh 5vw 5vh 5vw
   background-color: var(--design-icon-background)
-  img
-    width: 190px
-    display: block
-    margin: auto
-  i
-    display: block
-    margin: auto
-    font-size: 6em
-    max-width: 190px
-    max-height: 100px
+  a
+    display: flex
+    color: var(--primary-font-color)
+    font-family: var(--primary-font)
+    text-decoration: none
+    height: 70%
+    align-items: center
+    p
+      display: block
+      margin: auto 0 auto auto
+      font-size: 2.5em
+    i
+      font-size: 3em
+      margin-right: auto
+    img
+      width: 80%
+      max-height: 100%
+      display: block
+      margin: auto
+    @media all and (orientation: landscape)
+      p
+        font-size: 4em
+      i
+        font-size: 5em
   p
     font-family: var(--secondary-font)
     font-size: 1em
+    align-self: end
+    margin: 1vh 1vw 0 1vw

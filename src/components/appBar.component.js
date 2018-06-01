@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {push} from 'react-router-redux';
-
-import github from '../assets/images/GitHub.png';
-import linkedin from '../assets/images/LinkedIn.png';
+import github from '../assets/images/GitHub.svg';
+import linkedin from '../assets/images/LinkedIn.svg';
 
 class AppBar extends Component {
 
