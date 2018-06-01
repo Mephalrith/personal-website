@@ -1,4 +1,7 @@
 :root {
   --background-color: #1D1D1D;
   --design-icon-background: rgba(255, 255, 255, 0.1);
+  --primary-font: Aadhunik, sans-serif;
+  --secondary-font: Ubuntu-L, sans-serif;
+  --accent: #D44A27
 }

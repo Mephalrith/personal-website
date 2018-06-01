@@ -15,7 +15,7 @@
   top: 0;
   z-index: 5; }
   .header-app-bar a {
-    font-family: Aadhunik, sans-serif;
+    font-family: var(--primary-font);
     font-size: calc(0.9em + 1vw);
     cursor: pointer;
     align-self: center;
@@ -26,7 +26,7 @@
 .selected {
   animation-name: fade-in;
   animation-duration: 0.3s;
-  border-bottom: 20px solid #D44A27;
+  border-bottom: 20px solid var(--accent);
   padding-top: calc(24px + 1vh);
   padding-bottom: calc(5px + 1vh); }
 
@@ -46,7 +46,7 @@
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); }
   100% {
-    border-bottom: 20px solid #D44A27;
+    border-bottom: 20px solid var(--accent);
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); } }
 
@@ -56,7 +56,7 @@
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); }
   100% {
-    border-bottom: 20px solid #D44A27;
+    border-bottom: 20px solid var(--accent);
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); } }
 
@@ -66,7 +66,7 @@
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); }
   100% {
-    border-bottom: 20px solid #D44A27;
+    border-bottom: 20px solid var(--accent);
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); } }
 
@@ -76,7 +76,7 @@
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); }
   100% {
-    border-bottom: 20px solid #D44A27;
+    border-bottom: 20px solid var(--accent);
     padding-top: calc(24px + 1vh);
     padding-bottom: calc(5px + 1vh); } }
 
@@ -102,7 +102,7 @@
 
 .home-body {
   display: block;
-  font-family: Aadhunik, sans-serif;
+  font-family: var(--primary-font);
   margin: 7vh auto 0 auto;
   max-width: 730px;
   height: 83vh;
@@ -134,7 +134,7 @@
     margin-top: 1vh; } }
 
 .about-body {
-  font-family: Aadhunik, sans-serif;
+  font-family: var(--primary-font);
   margin-top: 20px; }
 
 .about-footer {
@@ -155,7 +155,7 @@
   display: block;
   margin: 0 auto 0 auto;
   font-size: 1.4em;
-  font-family: Ubuntu-L, sans-serif;
+  font-family: var(--secondary-font);
   text-wrap: normal;
   max-width: 700px;
   z-index: 3; }
@@ -187,7 +187,7 @@
   margin: 0 auto 0 auto;
   width: 90vw; }
   .design-body p {
-    font-family: Aadhunik, sans-serif;
+    font-family: var(--primary-font);
     font-size: 2em;
     margin-bottom: 0; }
 
@@ -199,7 +199,7 @@
   list-style: none;
   padding: 0;
   margin-bottom: 0;
-  border: 2px solid #D44A27;
+  border: 2px solid var(--accent);
   border-left-width: 0;
   justify-content: space-around; }
 
@@ -209,7 +209,7 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-  border: 2px solid #D44A27;
+  border: 2px solid var(--accent);
   border-right-width: 0;
   border-top-width: 0;
   justify-content: space-around; }
@@ -219,7 +219,7 @@
   list-style: none;
   padding: 0;
   margin-top: 0;
-  border: 2px solid #D44A27;
+  border: 2px solid var(--accent);
   border-left-width: 0;
   border-top-width: 0;
   justify-content: space-around; }
@@ -293,11 +293,38 @@
   max-width: 730px;
   text-align: center; }
   .contact-body h1 {
+    font-family: var(--primary-font);
     font-size: 4em; }
   .contact-body p {
     margin: 0 2vw 0 2vw;
-    font-family: Ubuntu-L, sans-serif;
+    font-family: var(--secondary-font);
     font-size: 2em; }
+
+.contact-methods {
+  display: inline-flex;
+  margin: 4vh;
+  border: 4px solid var(--accent);
+  border-right-width: 0;
+  border-bottom-width: 0; }
+
+.contact-card {
+  width: 200px;
+  height: 150px;
+  margin: 2vh 2vw 0 2vw;
+  background-color: var(--design-icon-background); }
+  .contact-card img {
+    width: 190px;
+    display: block;
+    margin: auto; }
+  .contact-card i {
+    display: block;
+    margin: auto;
+    font-size: 6em;
+    max-width: 190px;
+    max-height: 100px; }
+  .contact-card p {
+    font-family: var(--secondary-font);
+    font-size: 1em; }
 
 @font-face {
   font-family: 'Aadhunik';
