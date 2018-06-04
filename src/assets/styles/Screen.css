@@ -149,14 +149,15 @@
       top: -180px; } }
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-footer {
-      top: -500px; } }
+      top: -300px; } }
 
 .about-text {
   display: block;
+  position: relative;
+  top: -5vh;
   margin: 0 auto 0 auto;
-  font-size: 1.4em;
+  font-size: 2em;
   font-family: var(--secondary-font);
-  text-wrap: normal;
   max-width: 700px;
   z-index: 3; }
   @media all and (max-width: 600px) and (orientation: portrait) {
@@ -165,12 +166,8 @@
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-text {
       position: relative;
-      top: -180px;
-      font-size: 2em;
+      top: -160px;
       margin: 0 10px 0 10px; } }
-  @media all and (min-width: 701px) and (max-width: 900px) and (orientation: landscape) {
-    .about-text {
-      font-size: 2em; } }
 
 .about-header {
   display: block;
@@ -180,7 +177,7 @@
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-header {
       position: relative;
-      top: -120px; } }
+      top: -100px; } }
 
 .design-body {
   display: block;
