@@ -149,7 +149,7 @@
       top: -180px; } }
   @media all and (max-width: 700px) and (orientation: landscape) {
     .about-footer {
-      top: -300px; } }
+      top: -420px; } }
 
 .about-text {
   display: block;
@@ -372,6 +372,9 @@
     font-family: var(--primary-font);
     font-size: 2em;
     margin-bottom: 1vh; }
+  @media all and (orientation: portrait) {
+    .code-body {
+      width: 95vw; } }
 
 .code-list-top {
   display: inline-flex;
@@ -390,7 +393,7 @@
 .code-card-contents {
   width: 35%;
   background-color: var(--design-icon-background);
-  margin: 2vh 2vw 2vh 2vw; }
+  margin: 2vh 4vw 2vh 4vw; }
   @media all and (orientation: portrait) {
     .code-card-contents {
       width: 45%; } }
