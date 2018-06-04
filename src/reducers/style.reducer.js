@@ -11,6 +11,7 @@ const styleReducer = handleActions({
             document.body.style.setProperty('--background-color', '#E3E3E3');
             document.body.style.setProperty('--primary-font-color', 'black');
             document.body.style.setProperty('--design-icon-background', 'rgba(0, 0, 0, 0.4)');
+            document.body.style.setProperty('--code-text-background', 'rgba(0, 0, 0, 0.2)');
             return {
                 ...state,
                 theme: "Light"
@@ -19,6 +20,7 @@ const styleReducer = handleActions({
             document.body.style.setProperty('--background-color', '#1D1D1D');
             document.body.style.setProperty('--primary-font-color', 'white');
             document.body.style.setProperty('--design-icon-background', 'rgba(255, 255, 255, 0.1)');
+            document.body.style.setProperty('--code-text-background', 'rgba(255, 255, 255, 0.1)');
             return {
                 ...state,
                 theme: "Dark"

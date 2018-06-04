@@ -105,8 +105,7 @@
   font-family: var(--primary-font);
   margin: 7vh auto 0 auto;
   max-width: 730px;
-  height: 83vh;
-  text-align: center; }
+  height: 83vh; }
   .home-body p {
     font-size: 4em; }
   @media all and (orientation: landscape) {
@@ -196,6 +195,7 @@
   display: grid; }
 
 .design-list-top {
+  width: 100%;
   display: inline-flex;
   list-style: none;
   padding: 0;
@@ -351,11 +351,78 @@
         font-size: 4em; }
       .contact-card a i {
         font-size: 5em; } }
-  .contact-card p {
-    font-family: var(--secondary-font);
-    font-size: 1em;
-    align-self: end;
-    margin: 1vh 1vw 0 1vw; }
+
+.contact-copy {
+  display: inline-flex;
+  text-align: center;
+  font-family: var(--secondary-font); }
+  .contact-copy p {
+    margin: 1vh 1vw 1vh 1vw;
+    font-size: 1em; }
+    .contact-copy p span {
+      font-size: 0.7em; }
+  .contact-copy i {
+    font-size: 1.5em;
+    margin: 0 1vw 0 1vw;
+    align-self: center;
+    cursor: pointer; }
+
+.code-body {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  width: 90vw; }
+  .code-body h1 {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    margin-bottom: 1vh; }
+
+.code-list-top {
+  display: inline-flex;
+  border: 2px solid var(--accent);
+  border-left-color: rgba(0, 0, 0, 0);
+  justify-content: space-around; }
+
+.code-list-mid {
+  display: inline-flex;
+  border: 2px solid var(--accent);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-width: 0;
+  justify-content: space-around;
+  margin-bottom: 30px; }
+
+.code-card-contents {
+  width: 35%;
+  background-color: var(--design-icon-background);
+  margin: 2vh 2vw 2vh 2vw; }
+  @media all and (orientation: portrait) {
+    .code-card-contents {
+      width: 45%; } }
+
+.code-card {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  .code-card a {
+    color: var(--primary-font-color);
+    background-color: var(--code-text-background);
+    text-decoration: none; }
+    .code-card a img {
+      margin: 1vh auto 0 auto;
+      width: 70%; }
+    .code-card a p {
+      font-size: 2em;
+      margin: 1vh auto 1vh auto;
+      font-family: var(--primary-font);
+      width: 100%; }
+
+.code-paragraph {
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  padding: 1vh 1vw 1vh 1vw;
+  font-size: 1.5em !important;
+  font-family: var(--secondary-font) !important; }
 
 @font-face {
   font-family: 'Aadhunik';
@@ -380,7 +447,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: Aadhunik, sans-serif;
+  font-family: var(--primary-font);
   background-color: var(--background-color);
   color: var(--primary-font-color); }
 

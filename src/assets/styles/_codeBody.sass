@@ -1,0 +1,55 @@
+.code-body
+  min-height: 100vh
+  margin: 0 auto 0 auto
+  width: 90vw
+  h1
+    font-family: var(--primary-font)
+    font-size: 2em
+    margin-bottom: 1vh
+
+.code-list-top
+  display: inline-flex
+  border: 2px solid var(--accent)
+  border-left-color: rgba(0, 0, 0, 0)
+  justify-content: space-around
+
+.code-list-mid
+  display: inline-flex
+  border: 2px solid var(--accent)
+  border-right-color: rgba(0, 0, 0, 0)
+  border-top-width: 0
+  justify-content: space-around
+  margin-bottom: 30px
+
+.code-card-contents
+  width: 35%
+  background-color: var(--design-icon-background)
+  margin: 2vh 2vw 2vh 2vw
+  @media all and (orientation: portrait)
+    width: 45%
+
+.code-card
+  width: 100%
+  text-align: center
+  display: flex
+  flex-direction: column
+  a
+    color: var(--primary-font-color)
+    background-color: var(--code-text-background)
+    text-decoration: none
+    img
+      margin: 1vh auto 0 auto
+      width: 70%
+    p
+      font-size: 2em
+      margin: 1vh auto 1vh auto
+      font-family: var(--primary-font)
+      width: 100%
+
+.code-paragraph
+  position: relative
+  bottom: 0
+  margin: 0
+  padding: 1vh 1vw 1vh 1vw
+  font-size: 1.5em !important
+  font-family: var(--secondary-font) !important

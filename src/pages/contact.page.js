@@ -3,6 +3,8 @@ import AppBar from "../components/appBar.component";
 import ThemeBar from '../components/themeBar.component';
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import Ripples from 'react-ripples';
 import discord from '../assets/images/Discord.svg';
 import darkDiscord from '../assets/images/Dark-Discord.svg';
 import github from '../assets/images/GitHub-Name.svg';
@@ -11,6 +13,7 @@ import linkedin from '../assets/images/LinkedIn-Name.svg';
 import darkLinkedin from '../assets/images/Dark-LinkedIn-Name.svg';
 
 class ContactPage extends Component {
+
     render() {
         return (
             <div>
@@ -31,7 +34,14 @@ class ContactPage extends Component {
                                         <i className={'material-icons'}>email</i>
                                 }
                             </a>
-                            <p>mephalrith@gmail.com</p>
+                            <Ripples>
+                                <CopyToClipboard text={"mephalrith@gmail.com"}>
+                                    <div className={'contact-copy'}>
+                                        <p>mephalrith@gmail.com</p>
+                                        <i className={'material-icons'}>file_copy</i>
+                                    </div>
+                                </CopyToClipboard>
+                            </Ripples>
                         </div>
                         <div className={'contact-card'}>
                             <a href={"https://discordapp.com/"}>
@@ -41,7 +51,14 @@ class ContactPage extends Component {
                                         <img src={darkDiscord} alt={"Discord"}/>
                                 }
                             </a>
-                            <p>Mephalrith#3019</p>
+                            <Ripples>
+                                <CopyToClipboard text={"Mephalrith#3019"}>
+                                    <div className={'contact-copy'}>
+                                        <p>Mephalrith#3019</p>
+                                        <i className={'material-icons'}>file_copy</i>
+                                    </div>
+                                </CopyToClipboard>
+                            </Ripples>
                         </div>
                     </div>
 
@@ -54,7 +71,14 @@ class ContactPage extends Component {
                                         <img src={darkGithub} alt={"github"}/>
                                 }
                             </a>
-                            <p>github.com/Mephalrith</p>
+                            <Ripples>
+                                <CopyToClipboard text={"github.com/Mephalrith"}>
+                                    <div className={'contact-copy'}>
+                                        <p>github.com/Mephalrith</p>
+                                        <i className={'material-icons'}>file_copy</i>
+                                    </div>
+                                </CopyToClipboard>
+                            </Ripples>
                         </div>
                         <div className={'contact-card'}>
                             <a href={"https://www.linkedin.com/in/brooke-porter-00307152/"}>
@@ -64,7 +88,14 @@ class ContactPage extends Component {
                                         <img src={darkLinkedin} alt={"linkedin"}/>
                                 }
                             </a>
-                            <p>linkedin.com/in/brooke-porter-00307152/</p>
+                            <Ripples>
+                                <CopyToClipboard text={"linkedin.com/in/brooke-porter-00307152/"}>
+                                    <div className={'contact-copy'}>
+                                        <p><span>linkedin.com/in/brooke-porter-00307152/</span></p>
+                                        <i className={'material-icons'}>file_copy</i>
+                                    </div>
+                                </CopyToClipboard>
+                            </Ripples>
                         </div>
                     </div>
 
