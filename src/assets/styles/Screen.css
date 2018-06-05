@@ -4,9 +4,7 @@
   background-color: #1D1D1D;
   color: white;
   width: 100vw;
-  height: 7vh;
-  min-height: 38px;
-  max-height: 70px;
+  height: var(--app-bar-height);
   -webkit-box-shadow: 0 2px 10px #0E0E0E;
   -moz-box-shadow: 0 2px 10px #0E0E0E;
   box-shadow: 0 2px 4px #0E0E0E;
@@ -16,19 +14,39 @@
   z-index: 5; }
   .header-app-bar a {
     font-family: var(--primary-font);
-    font-size: calc(0.9em + 1vw);
+    font-size: 1.5em;
     cursor: pointer;
     align-self: center;
     margin: 0 1vw 0 1vw;
     padding-left: 6px;
     padding-right: 8px; }
+  @media all and (min-width: 960px) and (orientation: portrait) {
+    .header-app-bar {
+      height: calc(var(--app-bar-height) + 18px); } }
+  @media all and (max-width: 599px) and (min-width: 400px) and (orientation: portrait) {
+    .header-app-bar {
+      height: calc(var(--app-bar-height) - 18px); } }
+  @media all and (max-width: 399px) and (min-width: 335px) and (orientation: portrait) {
+    .header-app-bar {
+      height: calc(var(--app-bar-height) - 24px); } }
+  @media all and (max-width: 334px) and (orientation: portrait) {
+    .header-app-bar {
+      height: calc(var(--app-bar-height) - 32px); } }
 
 .selected {
   animation-name: fade-in;
   animation-duration: 0.3s;
   border-bottom: 20px solid var(--accent);
-  padding-top: calc(24px + 1vh);
-  padding-bottom: calc(5px + 1vh); }
+  padding-top: 35px;
+  padding-bottom: 15px; }
+  @media all and (max-width: 599px) and (min-width: 335px) and (orientation: portrait) {
+    .selected {
+      padding-top: 30px;
+      padding-bottom: 10px; } }
+  @media all and (max-width: 334px) and (orientation: portrait) {
+    .selected {
+      padding-top: 27px;
+      padding-bottom: 7px; } }
 
 .right-app-bar {
   display: inline-flex;
@@ -37,48 +55,31 @@
   .right-app-bar a {
     margin: 0 1vw 0 1vw; }
   .right-app-bar img {
-    height: 2.5vw;
-    min-height: 20px; }
+    height: 1.5em; }
 
 @-webkit-keyframes fade-in {
   0% {
-    border-bottom: 20px solid rgba(0, 0, 0, 0);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); }
+    border-bottom: 20px solid rgba(0, 0, 0, 0); }
   100% {
-    border-bottom: 20px solid var(--accent);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); } }
+    border-bottom: 20px solid var(--accent); } }
 
 @-moz-keyframes fade-in {
   0% {
-    border-bottom: 20px solid rgba(0, 0, 0, 0);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); }
+    border-bottom: 20px solid rgba(0, 0, 0, 0); }
   100% {
-    border-bottom: 20px solid var(--accent);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); } }
+    border-bottom: 20px solid var(--accent); } }
 
 @-ms-keyframes fade-in {
   0% {
-    border-bottom: 20px solid rgba(0, 0, 0, 0);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); }
+    border-bottom: 20px solid rgba(0, 0, 0, 0); }
   100% {
-    border-bottom: 20px solid var(--accent);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); } }
+    border-bottom: 20px solid var(--accent); } }
 
 @keyframes fade-in {
   0% {
-    border-bottom: 20px solid rgba(0, 0, 0, 0);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); }
+    border-bottom: 20px solid rgba(0, 0, 0, 0); }
   100% {
-    border-bottom: 20px solid var(--accent);
-    padding-top: calc(24px + 1vh);
-    padding-bottom: calc(5px + 1vh); } }
+    border-bottom: 20px solid var(--accent); } }
 
 .theme-bar {
   position: fixed;
@@ -107,7 +108,7 @@
   max-width: 730px;
   height: 83vh; }
   .home-body p {
-    font-size: 4em; }
+    font-size: 3em; }
   @media all and (orientation: landscape) {
     .home-body p {
       margin: 20px 0 20px 5px; } }
@@ -144,10 +145,13 @@
   top: -350px;
   max-width: 730px;
   z-index: 1; }
-  @media all and (max-width: 600px) and (orientation: portrait) {
+  @media all and (max-width: 700px) and (min-width: 400px) and (orientation: portrait) {
     .about-footer {
-      top: -180px; } }
-  @media all and (max-width: 700px) and (orientation: landscape) {
+      top: -220px; } }
+  @media all and (max-width: 399px) and (orientation: portrait) {
+    .about-footer {
+      top: -22vh; } }
+  @media all and (max-width: 701px) and (orientation: landscape) {
     .about-footer {
       top: -420px; } }
 
@@ -156,14 +160,14 @@
   position: relative;
   top: -5vh;
   margin: 0 auto 0 auto;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: var(--secondary-font);
   max-width: 700px;
   z-index: 3; }
-  @media all and (max-width: 600px) and (orientation: portrait) {
+  @media all and (max-width: 700px) and (orientation: portrait) {
     .about-text {
       margin: 0 5px 0 10px; } }
-  @media all and (max-width: 700px) and (orientation: landscape) {
+  @media all and (max-width: 701px) and (orientation: landscape) {
     .about-text {
       position: relative;
       top: -160px;
@@ -286,9 +290,8 @@
       width: 50%; } }
 
 .contact-body {
-  display: block;
   margin: 6vh auto 0 auto;
-  max-width: 70vw;
+  width: 80vw;
   text-align: center; }
   .contact-body h1 {
     font-family: var(--primary-font);
@@ -303,7 +306,7 @@
       height: 100vh; } }
   @media all and (orientation: portrait) {
     .contact-body {
-      max-width: 90vw; } }
+      width: 90vw; } }
 
 .contact-methods-top {
   display: inline-flex;
@@ -320,9 +323,10 @@
   width: 100%; }
 
 .contact-card {
-  width: 40vw;
-  height: 20vh;
-  margin: 5vh 5vw 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 4vh 4vw 4vh 4vw;
   background-color: var(--design-icon-background); }
   .contact-card a {
     display: flex;
@@ -330,20 +334,26 @@
     font-family: var(--primary-font);
     text-decoration: none;
     height: 70%;
+    width: 100%;
     align-items: center; }
     .contact-card a p {
       display: block;
       margin: auto 0 auto auto;
-      font-size: 2.5em; }
+      font-size: 4em; }
     .contact-card a i {
-      font-size: 3em;
+      font-size: 5em;
       margin-right: auto; }
     .contact-card a img {
       width: 80%;
       max-height: 100%;
       display: block;
       margin: auto; }
-    @media all and (orientation: landscape) {
+    @media all and (max-width: 899px) and (orientation: landscape) {
+      .contact-card a p {
+        font-size: 2em; }
+      .contact-card a i {
+        font-size: 3em; } }
+    @media all and (min-width: 900px) and (orientation: landscape) {
       .contact-card a p {
         font-size: 4em; }
       .contact-card a i {
@@ -352,17 +362,28 @@
 .contact-copy {
   display: inline-flex;
   text-align: center;
-  font-family: var(--secondary-font); }
+  font-family: var(--secondary-font);
+  cursor: pointer; }
   .contact-copy p {
     margin: 1vh 1vw 1vh 1vw;
-    font-size: 1em; }
+    padding-bottom: 1vh;
+    font-size: 1.4em; }
     .contact-copy p span {
-      font-size: 0.7em; }
+      font-size: 0.8em; }
   .contact-copy i {
     font-size: 1.5em;
     margin: 0 1vw 0 1vw;
-    align-self: center;
-    cursor: pointer; }
+    align-self: center; }
+  @media all and (max-width: 899px) and (orientation: landscape) {
+    .contact-copy p {
+      font-size: 1em; }
+      .contact-copy p span {
+        font-size: 0.5em; } }
+  @media all and (min-width: 900px) and (orientation: landscape) {
+    .contact-copy p {
+      font-size: 1.3em; }
+      .contact-copy p span {
+        font-size: 0.8em; } }
 
 .code-body {
   min-height: 100vh;
@@ -446,23 +467,23 @@
 body {
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-family: var(--primary-font);
   background-color: var(--background-color);
   color: var(--primary-font-color); }
 
 @media all and (min-width: 960px) and (orientation: portrait) {
   body {
-    font-size: 20px; } }
-
-@media all and (max-width: 959px) and (min-width: 600px) and (orientation: portrait) {
-  body {
     font-size: 16px; } }
 
-@media all and (max-width: 599px) and (min-width: 320px) and (orientation: portrait) {
+@media all and (max-width: 599px) and (min-width: 400px) and (orientation: portrait) {
   body {
     font-size: 10px; } }
 
-@media all and (max-width: 900px) and (orientation: landscape) {
+@media all and (max-width: 399px) and (min-width: 335px) and (orientation: portrait) {
   body {
     font-size: 8px; } }
+
+@media all and (max-width: 334px) and (orientation: portrait) {
+  body {
+    font-size: 6px; } }
