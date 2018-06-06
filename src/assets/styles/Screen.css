@@ -419,23 +419,24 @@
     .code-card-contents {
       width: 45%; } }
 
-.code-card {
-  width: 100%;
-  text-align: center;
+.code-card-background {
+  background-color: var(--code-text-background);
+  text-decoration: none;
   display: flex;
   flex-direction: column; }
-  .code-card a {
-    color: var(--primary-font-color);
-    background-color: var(--code-text-background);
-    text-decoration: none; }
-    .code-card a img {
+  .code-card-background a {
+    color: var(--primary-font-color); }
+    .code-card-background a img {
       margin: 1vh auto 0 auto;
       width: 70%; }
-    .code-card a p {
-      font-size: 2em;
-      margin: 1vh auto 1vh auto;
-      font-family: var(--primary-font);
-      width: 100%; }
+
+.code-card {
+  width: 100%;
+  text-align: center; }
+  .code-card p {
+    font-size: 2em;
+    margin: 1vh auto 1vh auto;
+    font-family: var(--primary-font); }
 
 .code-paragraph {
   position: relative;
@@ -444,6 +445,18 @@
   padding: 1vh 1vw 1vh 1vw;
   font-size: 1.5em !important;
   font-family: var(--secondary-font) !important; }
+
+.code-download {
+  background-color: rgba(0, 0, 0, 0) !important;
+  display: inline-flex; }
+  .code-download p {
+    margin: 1vh 0 1vh auto; }
+  .code-download a {
+    height: 100%;
+    align-self: center;
+    margin: 0 auto 0 1vw; }
+    .code-download a i {
+      font-size: 3em; }
 
 @font-face {
   font-family: 'Aadhunik';

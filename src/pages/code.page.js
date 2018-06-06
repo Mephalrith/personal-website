@@ -22,14 +22,16 @@ class CodePage extends Component {
 
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
-                                <a href={"https://github.com/Mephalrith/personal-website"}>
-                                    {
-                                        this.props.theme === "Dark" ?
-                                            <img src={foxLogo} alt={"this website logo"}/> :
-                                            <img src={darkFoxLogo} alt={"this website logo"}/>
-                                    }
+                                <div className={'code-card-background'}>
+                                    <a href={"https://github.com/Mephalrith/personal-website"}>
+                                        {
+                                            this.props.theme === "Dark" ?
+                                                <img src={foxLogo} alt={"this website logo"}/> :
+                                                <img src={darkFoxLogo} alt={"this website logo"}/>
+                                        }
+                                    </a>
                                     <p>My Website</p>
-                                </a>
+                                </div>
                                 <p className={'code-paragraph'}>
                                     You're looking at it! This website is built in React using Redux. I designed this
                                     website using the Google Material Design guidelines, and built all assets myself.
@@ -39,10 +41,17 @@ class CodePage extends Component {
 
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
-                                <a href={"https://github.com/Mephalrith/WPM_Game"}>
-                                    <img src={boat} alt={'WPM game'}/>
-                                    <p>WPM Game</p>
-                                </a>
+                                <div className={'code-card-background'}>
+                                    <a href={"https://github.com/Mephalrith/WPM_Game"}>
+                                        <img src={boat} alt={'WPM game'}/>
+                                    </a>
+                                    <div className={'code-download'}>
+                                        <p>WPM Game</p>
+                                        <a href={'https://github.com/Mephalrith/WPM_Game/raw/master/releases/Final_Porter_Brooke.jar'}>
+                                            <i className={'material-icons'}>save_alt</i>
+                                        </a>
+                                    </div>
+                                </div>
                                 <p className={'code-paragraph'}>
                                     I built a word-per-minute game in Java. Type faster than each level's threshold to
                                     get through the level. How long can you survive?
@@ -54,10 +63,12 @@ class CodePage extends Component {
                     <div className={'code-list-mid'}>
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
-                                <a href={'https://github.com/Mephalrith/mkm-formulator'}>
-                                    <img src={electron} alt={"electron"}/>
+                                <div className={'code-card-background'}>
+                                    <a href={'https://github.com/Mephalrith/mkm-formulator'}>
+                                        <img src={electron} alt={"electron"}/>
+                                    </a>
                                     <p>MKM</p>
-                                </a>
+                                </div>
                                 <p className={'code-paragraph'}>
                                     A complete rebuild of the software used by MKM & Associates for document management
                                     and logs. It is built as an Electron app using React and Redux.
@@ -65,7 +76,6 @@ class CodePage extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <ThemeBar/>
