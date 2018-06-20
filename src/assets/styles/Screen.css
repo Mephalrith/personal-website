@@ -3,7 +3,7 @@
   display: inline-flex;
   background-color: #1D1D1D;
   color: white;
-  width: 100vw;
+  width: 100%;
   height: var(--app-bar-height);
   -webkit-box-shadow: 0 2px 10px #0E0E0E;
   -moz-box-shadow: 0 2px 10px #0E0E0E;
