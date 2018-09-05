@@ -4,6 +4,7 @@ import ThemeBar from '../components/themeBar.component';
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import foxLogo from '../assets/images/code/foxLogo.svg';
+import remot3it from '../assets/images/code/remot3it.svg';
 import darkFoxLogo from '../assets/images/code/Dark-foxLogo.svg';
 import boat from '../assets/images/code/boat.svg';
 import electron from '../assets/images/code/electron.svg';
@@ -38,7 +39,38 @@ class CodePage extends Component {
                                 </p>
                             </div>
                         </div>
+                        <div className={'code-card-contents'}>
+                            <div className={'code-card'}>
+                                <div className={'code-card-background'}>
+                                    <a href={"https://www.remot3.it/web/index.html"}>
+                                        <img src={remot3it} alt={"this website logo"}/>
+                                    </a>
+                                    <p>Remot3.it</p>
+                                </div>
+                                <p className={'code-paragraph'}>
+                                    I am an intern working on micro-services, backend, and some frontend
+                                    for the company's web services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className={'code-list-mid'}>
+                        <div className={'code-card-contents'}>
+                            <div className={'code-card'}>
+                                <div className={'code-card-background'}>
+                                    <a href={'https://github.com/Mephalrith/mkm-formulator'}>
+                                        <img src={electron} alt={"electron"}/>
+                                    </a>
+                                    <p>MKM</p>
+                                </div>
+                                <p className={'code-paragraph'}>
+                                    A complete rebuild of the software used by MKM & Associates for document
+                                    management
+                                    and logs. It is built as an Electron app using React and Redux.
+                                </p>
+                            </div>
+                        </div>
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
                                 <div className={'code-card-background'}>
@@ -55,23 +87,6 @@ class CodePage extends Component {
                                 <p className={'code-paragraph'}>
                                     I built a word-per-minute game in Java. Type faster than each level's threshold to
                                     get through the level. How long can you survive?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={'code-list-mid'}>
-                        <div className={'code-card-contents'}>
-                            <div className={'code-card'}>
-                                <div className={'code-card-background'}>
-                                    <a href={'https://github.com/Mephalrith/mkm-formulator'}>
-                                        <img src={electron} alt={"electron"}/>
-                                    </a>
-                                    <p>MKM</p>
-                                </div>
-                                <p className={'code-paragraph'}>
-                                    A complete rebuild of the software used by MKM & Associates for document management
-                                    and logs. It is built as an Electron app using React and Redux.
                                 </p>
                             </div>
                         </div>
