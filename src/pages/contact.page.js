@@ -26,7 +26,7 @@ class ContactPage extends Component {
 
                     <div className={'contact-methods-top'}>
                         <div className={'contact-card'}>
-                            <a href={'mailto:mephalrith@gmail.com'}>
+                            <a href={'mailto:brookeporter13@gmail.com'}>
                                 <p>Email</p>
                                 {
                                     this.props.theme === "Dark" ?
@@ -35,9 +35,9 @@ class ContactPage extends Component {
                                 }
                             </a>
                             <Ripples>
-                                <CopyToClipboard text={"mephalrith@gmail.com"}>
+                                <CopyToClipboard text={"brookeporter13@gmail.com"}>
                                     <div className={'contact-copy'}>
-                                        <p>mephalrith@gmail.com</p>
+                                        <p>brookeporter13@gmail.com</p>
                                         <i className={'material-icons'}>file_copy</i>
                                     </div>
                                 </CopyToClipboard>
@@ -52,9 +52,9 @@ class ContactPage extends Component {
                                 }
                             </a>
                             <Ripples>
-                                <CopyToClipboard text={"Mephalrith#3019"}>
+                                <CopyToClipboard text={"bporter#3019"}>
                                     <div className={'contact-copy'}>
-                                        <p>Mephalrith#3019</p>
+                                        <p>bporter#3019</p>
                                         <i className={'material-icons'}>file_copy</i>
                                     </div>
                                 </CopyToClipboard>
@@ -64,7 +64,7 @@ class ContactPage extends Component {
 
                     <div className={'contact-methods-bottom'}>
                         <div className={'contact-card'}>
-                            <a href={"https://github.com/Mephalrith"}>
+                            <a href={"https://github.com/blporter"}>
                                 {
                                     this.props.theme === "Dark" ?
                                         <img src={github} alt={"github"}/> :
@@ -72,16 +72,16 @@ class ContactPage extends Component {
                                 }
                             </a>
                             <Ripples>
-                                <CopyToClipboard text={"github.com/Mephalrith"}>
+                                <CopyToClipboard text={"github.com/blporter"}>
                                     <div className={'contact-copy'}>
-                                        <p>github.com/Mephalrith</p>
+                                        <p>github.com/blporter</p>
                                         <i className={'material-icons'}>file_copy</i>
                                     </div>
                                 </CopyToClipboard>
                             </Ripples>
                         </div>
                         <div className={'contact-card'}>
-                            <a href={"https://www.linkedin.com/in/brooke-porter-00307152/"}>
+                            <a href={"https://www.linkedin.com/in/blp/"}>
                                 {
                                     this.props.theme === "Dark" ?
                                         <img src={linkedin} alt={"linkedin"}/> :
@@ -89,9 +89,9 @@ class ContactPage extends Component {
                                 }
                             </a>
                             <Ripples>
-                                <CopyToClipboard text={"linkedin.com/in/brooke-porter-00307152/"}>
+                                <CopyToClipboard text={"linkedin.com/in/blp/"}>
                                     <div className={'contact-copy'}>
-                                        <p><span>linkedin.com/in/brooke-porter-00307152/</span></p>
+                                        <p><span>linkedin.com/in/blp/</span></p>
                                         <i className={'material-icons'}>file_copy</i>
                                     </div>
                                 </CopyToClipboard>

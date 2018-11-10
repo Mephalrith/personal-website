@@ -24,7 +24,7 @@ class CodePage extends Component {
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
                                 <div className={'code-card-background'}>
-                                    <a href={"https://github.com/Mephalrith/personal-website"}>
+                                    <a href={"https://github.com/blporter/personal-website"}>
                                         {
                                             this.props.theme === "Dark" ?
                                                 <img src={foxLogo} alt={"this website logo"}/> :
@@ -59,7 +59,7 @@ class CodePage extends Component {
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
                                 <div className={'code-card-background'}>
-                                    <a href={'https://github.com/Mephalrith/mkm-formulator'}>
+                                    <a href={'https://github.com/blporter/mkm-formulator'}>
                                         <img src={electron} alt={"electron"}/>
                                     </a>
                                     <p>MKM</p>
@@ -74,12 +74,12 @@ class CodePage extends Component {
                         <div className={'code-card-contents'}>
                             <div className={'code-card'}>
                                 <div className={'code-card-background'}>
-                                    <a href={"https://github.com/Mephalrith/WPM_Game"}>
+                                    <a href={"https://github.com/blporter/WPM_Game"}>
                                         <img src={boat} alt={'WPM game'}/>
                                     </a>
                                     <div className={'code-download'}>
                                         <p>WPM Game</p>
-                                        <a href={'https://github.com/Mephalrith/WPM_Game/raw/master/releases/Final_Porter_Brooke.jar'}>
+                                        <a href={'https://github.com/blporter/WPM_Game/raw/master/releases/Final_Porter_Brooke.jar'}>
                                             <i className={'material-icons'}>save_alt</i>
                                         </a>
                                     </div>

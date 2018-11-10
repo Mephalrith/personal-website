@@ -38,10 +38,10 @@ class AppBar extends Component {
                     Contact
                 </a>
                 <div className={'right-app-bar'}>
-                    <a href={"https://github.com/Mephalrith"}>
+                    <a href={"https://github.com/blporter"}>
                         <img src={github} alt={"github"}/>
                     </a>
-                    <a href={"https://www.linkedin.com/in/brooke-porter-00307152/"}>
+                    <a href={"https://www.linkedin.com/in/blp/"}>
                         <img src={linkedin} alt={"linkedin"}/>
                     </a>
                 </div>

@@ -26,26 +26,16 @@ class AboutPage extends Component {
                                  className={'about-header'}/>
                     }
                     <p className={'about-text'}>
-                        I am a developer with experience in graphic design and computer animation. I can make assets and
-                        also code!
+                        I discovered my love for programming by creating macros and plugins for video games as a
+                        teenager. At the time, I did not realize that programming was something that I could pursue.
                         <br/><br/>
-                        I went to Full Sail University in Winter Park, Florida for my BS in Computer Animation, but was
-                        unable to find a job with that degree when I returned home to Santa Rosa, California. I decided
-                        to return to school for Computer Science. I found that I enjoyed programming more than I ever
-                        enjoyed animation, and began learning languages on my own outside of class work.
+                        I moved to Florida for a couple of years while I tried to figure out what I wanted from life,
+                        decided that Florida was not the place for me, and moved back to California. I worked in food
+                        service for a while, and finally realized that what I really wanted was to return to
+                        programming.
                         <br/><br/>
-                        I am very fluent in using Photoshop and Maya, and have experience with Illustrator and
-                        other software such as Inkscape, Sketchbook, and Paint Tool Sai.
-                        <br/><br/>
-                        Working in frontend development has been a very interesting experience for me, because I
-                        already had exposure to art and design before learning to program. I am able to make my own
-                        designs, create the assets, and then build the UI myself.
-                        <br/><br/>
-                        Because of that, I am particularly looking forward to working on backend and full stack
-                        applications, since I already have experience with frontend.
-                        <br/><br/>
-                        Contact me! I'd love to work with you.
-                        <br/>
+                        I attended the Santa Rosa Junior College to work towards a Computer Science degree, and have
+                        since transferred to San Francisco State University.
                     </p>
                     {
                         this.props.theme === "Dark" ?
