@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-    - image: circleci/personal-website:latest
+    - image: mephalrith/personal-website:latest
     steps:
     - checkout
     - run: echo "hello world"
