@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.56f67c59.css",
   "main.css.map": "static/css/main.56f67c59.css.map",
-  "main.js": "static/js/main.5ca4f0ba.js",
-  "main.js.map": "static/js/main.5ca4f0ba.js.map",
+  "main.js": "static/js/main.8bf135cb.js",
+  "main.js.map": "static/js/main.8bf135cb.js.map",
   "static/media/Aadhunik.ttf": "static/media/Aadhunik.2d6d5ea4.ttf",
   "static/media/Dark-Discord.svg": "static/media/Dark-Discord.32dd7dce.svg",
   "static/media/Dark-GitHub-Name.svg": "static/media/Dark-GitHub-Name.c441f25d.svg",
@@ -20,7 +20,7 @@
   "static/media/aboutFooter.svg": "static/media/aboutFooter.275798b1.svg",
   "static/media/aboutHeader.svg": "static/media/aboutHeader.91323886.svg",
   "static/media/anubis.svg": "static/media/anubis.7e19c850.svg",
-  "static/media/beaver.svg": "static/media/beaver.932cb43a.svg",
+  "static/media/beaver.svg": "static/media/beaver.96d1b486.svg",
   "static/media/beer.svg": "static/media/beer.82bce40b.svg",
   "static/media/boat.svg": "static/media/boat.b5694dd1.svg",
   "static/media/electron.svg": "static/media/electron.55186058.svg",
@@ -31,6 +31,6 @@
   "static/media/messageInABottle.svg": "static/media/messageInABottle.da78fdef.svg",
   "static/media/neonWars.svg": "static/media/neonWars.73898846.svg",
   "static/media/remot3it.svg": "static/media/remot3it.3cf6555e.svg",
-  "static/media/skillets.svg": "static/media/skillets.29c2d915.svg",
+  "static/media/skillets.svg": "static/media/skillets.d6db8eeb.svg",
   "static/media/tableGraphic.svg": "static/media/tableGraphic.c9d87d3c.svg"
 }
